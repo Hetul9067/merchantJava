@@ -18,7 +18,7 @@ public class Display {
 
         // Check if the Smuggler has been initialized yet. If not, create a new Smuggler and set their inventory.
         int ans = 0;
-        
+
         if(s1.getName().equals(""))
         {
             Item iu1 = new Item("Lsd", 10, 200);
