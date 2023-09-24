@@ -143,7 +143,7 @@ public class City {
                 ans = Integer.parseInt(scanner.nextLine());
 
 
-                if (ans < 0 || ans > inventories.size()) throw new CustomException("error2");
+                if (ans < 0 || ans > inventoriesReferenceLi.size()) throw new CustomException("error2");
             }
 
             catch (CustomException ce)

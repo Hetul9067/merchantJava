@@ -40,13 +40,13 @@ public class Smuggler {
     void randomCityAssigner() {
 
         Random ran = new Random();
-        int x = ran.nextInt()%3;// Generate a random number between 0 and 2 (inclusive)
+        int x = ran.nextInt(3);// Generate a random number between 0 and 2 (inclusive)
 
         // Loop until a city is found that is not the current city
         while (currentCity == null || citiesLi.get(x) != currentCity)
         {
             // Assign a random city to the currentCity
-            currentCity = citiesLi.get(ran.nextInt() % 3);
+            currentCity = citiesLi.get(ran.nextInt(3) );
         }
         System.out.println("current city name: " + currentCity.getCityName()) ;
 
@@ -57,12 +57,12 @@ public class Smuggler {
 
 
         Random ran = new Random();
-        int x = ran.nextInt() % 3;
+        int x = ran.nextInt(3) ;
 
         do
         {
 
-            nextCity = citiesLi.get(ran.nextInt() % 3);
+            nextCity = citiesLi.get(ran.nextInt(3) );
 
         } while (nextCity == currentCity || nextCity == tempCity);
 
