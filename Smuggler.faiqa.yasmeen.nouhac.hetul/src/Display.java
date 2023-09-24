@@ -18,7 +18,8 @@ public class Display {
 
         // Check if the Smuggler has been initialized yet. If not, create a new Smuggler and set their inventory.
         int ans = 0;
-        if (s1.getName() == null)
+        
+        if(s1.getName().equals(""))
         {
             Item iu1 = new Item("Lsd", 10, 200);
             Item iu2 = new Item("Weed", 15, 30);
@@ -158,6 +159,7 @@ public class Display {
         // Display "GAME OVER" message if the game is lost
         if (loseStatus)
         {
+
             System.out.println("#####################");
             System.out.println("##### GAME OVER #####");
             System.out.println("#####################");

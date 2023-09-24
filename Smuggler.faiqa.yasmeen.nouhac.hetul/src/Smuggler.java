@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Smuggler {
 
     private Scanner scanner = new Scanner(System.in);
-    private String name;
+    private String name = "";
     private float SmugglerMoney = 100000;
     private City currentCity = null;
     private City nextCity;
@@ -24,7 +24,7 @@ public class Smuggler {
     private List<Item> inventories = new ArrayList<Item>();
 
     //constructor
-    public Smuggler() { }
+   public Smuggler() { }
 
     //constructor
     public Smuggler(String n, List<City> cities) {
@@ -507,7 +507,12 @@ public class Smuggler {
             caughtPercentageCounter += 10;
             System.out.println(caughtPercentageCounter + "percentage of the caught ");
 
+        }else if (totalQuantity < 500){
+            caughtPercentageCounter += 5;
+            System.out.println(caughtPercentageCounter + "percentage of the caught ");
         }
+
+
 
         if (caughtPercentageCounter >= 100)
         {
