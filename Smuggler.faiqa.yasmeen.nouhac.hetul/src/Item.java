@@ -52,7 +52,7 @@ public class Item {
         float range =  maxPrice - getBuyingPrice();
 
         // Assuming SellingPrice is a float field
-        float sellingPrice = (float) Math.round(rand.nextDouble() * range + getBuyingPrice());
+        float sellingPrice = (float) Math.round(rand.nextDouble() * range + (getBuyingPrice()+0.5f));
 
         // Round to 2 decimal places
         sellingPrice = (float) Math.round(sellingPrice * 100) / 100;

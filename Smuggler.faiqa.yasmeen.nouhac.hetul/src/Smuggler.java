@@ -388,6 +388,7 @@ public class Smuggler {
     //for printing Smuggler menu
     public void SmugglerMenu() {
 
+
         if (caught)
         {
             System.out.println("#############################");
@@ -396,7 +397,7 @@ public class Smuggler {
             caught = false;
 
         }
-        System.out.println("###########################");
+        System.out.println("\n\n\n\n\n\n\n\n###########################");
         System.out.println("###########################");
         System.out.println("Welcome to Smuggler Page : ");
         System.out.println("###########################");

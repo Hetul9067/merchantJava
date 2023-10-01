@@ -21,9 +21,9 @@ public class Display {
 
         if(s1.getName().equals(""))
         {
-            Item iu1 = new Item("Lsd", 10, 200);
-            Item iu2 = new Item("Weed", 15, 30);
-            Item iu3 = new Item("Heroin", 30, 50);
+            Item iu1 = new Item("Lsd", 8, 200);
+            Item iu2 = new Item("Weed", 12, 30);
+            Item iu3 = new Item("Heroin", 25, 50);
             System.out.println("Enter the name of the Smuggler : ");
             SmugglerName = scanner.nextLine();
 

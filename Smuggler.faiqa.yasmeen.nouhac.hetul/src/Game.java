@@ -6,6 +6,7 @@ public class Game {
         //list of cities
         Display d1 = new Display();
 
+
         //Montreal's Items
         Item im1 = new Item("Lsd", 10, 20000);
         Item im2 = new Item("Weed", 19, 40000);
